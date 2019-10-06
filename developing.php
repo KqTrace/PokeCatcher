@@ -34,13 +34,13 @@
                     <div class="col1-row-mid" style="height: 400px; overflow: auto;">
 
                         <div id="feedback-form">
-                          <h2 class="header">Register Today</h2>
+                          <h2 class="header">Registre-se</h2>
                         <div>
                         <form method="get" action="index.php">
-                            <input type="text" name="email" placeholder="Email"></input>
-                            <input type="text" name="name" placeholder="Name"></input>
-                            <label for="feedback-notify">Remind me about this event via SMS</label>
-                            <input type="checkbox" id="feedback-notify" name="notify">
+                            <input type="text" name="name" placeholder="Nome"></input>
+                            <input type="text" name="email" placeholder="E-mail"></input>
+                            <!--<label for="feedback-notify">Remind me about this event via SMS</label>
+                            <input type="checkbox" id="feedback-notify" name="notify">-->
                             <input type="text" id="feedback-phone" name="phone" placeholder="Phone number"></input>
                             <button type="submit">Register</button>
                         </form>
