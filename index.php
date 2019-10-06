@@ -20,7 +20,7 @@
                         <ul id="lista_menu">
                             <a href="index.php"><li onmouseover="mouseOverMenu(this)" onmouseout = "mouseOutMenu(this)">Início</li></a>
                             <a href="#" ><li onmouseover="mouseOverMenu(this)" onmouseout = "mouseOutMenu(this)">Login</li></a>
-                            <a href="#" ><li onmouseover="mouseOverMenu(this)" onmouseout = "mouseOutMenu(this)">Cadastrar</li></a>
+                            <a href="developing.php" ><li onmouseover="mouseOverMenu(this)" onmouseout = "mouseOutMenu(this)">Cadastrar</li></a>
                             <a href="#" ><li onmouseover="mouseOverMenu(this)" onmouseout = "mouseOutMenu(this)">Sobre</li></a>
                         </ul>
                     </div>
@@ -86,7 +86,26 @@
     <!--<script type="text/javascript" src="../JS/brain.js"></script>-->
 
     <?php
-        echo "Testando PHP";
+        require_once "Usuario.php";
+        require_once "Conexao.php";
+
+        $username = isset($_GET["name"])?$_GET["name"]:"Nome não capturado";
+        $email = isset($_GET["email"])?$_GET["email"]:"Email não capturado";
+
+        if ($username != "Nome não capturado" && $email != "Email não capturado"){
+            $sql = "INSERT INTO Usuario (cd_usuario, username, email)
+            VALUES (1, '$username', '$email')";
+            if (mysqli_query($mysqli  , $sql)) {
+                  echo "Gravado com sucesso";
+            }else{
+                  echo "Error: " . $sql . "<br>" . mysqli_error($mysqli);
+            }
+
+        }
+
+        $user = new Usuario($username, $email);
+        print_r ($user);
+
     ?>
 
 </body>

@@ -1,5 +1,5 @@
 <?php
-class usuario{
+class Usuario{
     //Atributos
     private $username;
     private $email;
@@ -13,9 +13,15 @@ class usuario{
     private $consumiveis;
 
 
-    public function __construct(){
-        this->username = "Nikita";
-        this->email = "Nikita@Testing.com.br";
+    public function __construct($name, $email){
+        $this->username = $name;
+        $this->email = $email;
+        $this->experiencia = 0;
+        $this->dinheiro = 0;
+        $this->pokeCapturados = 0;
+        $this->pokemonTime = 0;
     }
+
+    
 
 }
