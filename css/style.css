@@ -68,64 +68,64 @@ body{
 
 .container-wrap-mid{
     margin: 0px 120px;
+    padding: 5px;
+    font-family: 'Baloo', "Helvetica Neue", Helvetica, Arial;
+    color: #164879;
 }
 
+/* Removido e transferido para wrap-mid*/
 .container-inside-mid{
     padding: 5px;
     font-family: 'Baloo', "Helvetica Neue", Helvetica, Arial;
     color: #164879;
 }
 
-.col1-row-mid{
+.col1-row1-mid{
     padding: 5px;
     width: 480px;
     margin: 0px 30px 0px 0px;
     float: left;
 }
 
-.col1-row-mid h1, h2, h3, p{
+.col1-row1-mid h1, h2, h3, p{
     margin: 0;
 }
 
-.container-wrap-form{
+.vis-wrap-form{
     margin: 10px;
     background-color: #e6f0f5;
     box-shadow: 1px 4px 10px 1px #aaa;
+    padding: 8px;
 }
 
+/* Removido e transferido para vis-wrap-form*/
 .container-inside-form{
     padding: 8px;
 }
 
-.row1-form{
+.row1-inside-form{
     text-align: center;
-    margin: 50px 0px 210px;
+    margin: 50px 0px 150px;
 }
 
-.row1-form h2{
+.row1-inside-form h2{
     font-size: 38px;
 }
 
-.row2-form{
+.row2-inside-form{
     text-align: center;
     margin: 20px 0px 40px;
     font-size: 24px;
     display: table;
 }
 
-.row2-form a{
+.row2-inside-form a{
     color: #e6f0f5;
 }
 
 .col1-row2-form{
-    margin: 0px 65px;
-    width: 80px;
-    float: left;
-    padding: 8px;
-    border: 1px solid #5db75d;
-    border-radius: 5px;
+
     /*box-shadow: 3px 3px 8px 1px black;*/
-    background-color: #5db75d;
 }
 
 .col2-row2-form{
@@ -138,7 +138,7 @@ body{
     border-radius: 5px;
 }
 
-.col2-row-mid{
+.col2-row1-mid{
     float: left;
 }
 
@@ -169,6 +169,20 @@ body{
 a{
     text-decoration: none;
     color: #efeae1;
+}
+
+.vis-wrap-login{
+    background-color: #ffffff;
+    color: #2B82AD;
+}
+
+.col1-row1-login{
+    font-family: 'Open-Sans', sans-sans-serif;
+    font-weight: 600;
+}
+
+.vis-wrap-login input{
+    
 }
 
 
@@ -240,4 +254,19 @@ a{
   background: -webkit-linear-gradient(left, #207cca 0%,#9f58a3 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #207cca 0%,#9f58a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 ); /* IE6-9 */
+}
+
+
+/* Efeitos */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
 }

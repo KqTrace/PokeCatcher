@@ -14,7 +14,7 @@
             <div class="container-inside-top">
                 <div class="row-top">
                     <div class="col1-row-top">
-                        <a href="index.php"><h1>Poke <img src="../Images/poke_icon_head.png"> Catcher</h1></a>
+                        <a href="index.php"><h1>Poke <img src="img/poke_icon_head.png"> Catcher</h1></a>
                     </div>
                     <div class="col2-row-top">
                         <ul id="lista_menu">
@@ -34,10 +34,11 @@
                     <div class="col1-row-mid" style="height: 400px; overflow: auto;">
 
                         <div id="feedback-form">
-                          <h2 class="header">Registre-se</h2>
+                          <h2 class="header">Registre-se em</br>Poke Catcher</h2>
                         <div>
                         <form method="get" action="index.php">
-                            <input type="text" name="name" placeholder="Nome"></input>
+                            <input type="text" name="name" placeholder="Nome público"></input>
+                            <input type="text" name="lname" placeholder="Nome de usuário"
                             <input type="text" name="email" placeholder="E-mail"></input>
                             <!--<label for="feedback-notify">Remind me about this event via SMS</label>
                             <input type="checkbox" id="feedback-notify" name="notify">-->
@@ -82,6 +83,8 @@
     include("Conexao.php");
 
      ?>
+
+     <script type="text/javascript" src="js/interaction.js"></script>
 </body>
 
 </html>
