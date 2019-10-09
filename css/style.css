@@ -105,7 +105,7 @@ body{
 
 .row1-inside-form{
     text-align: center;
-    margin: 50px 0px 150px;
+    margin: 50px 0px 110px;
 }
 
 .row1-inside-form h2{
@@ -124,7 +124,7 @@ body{
 }
 
 .col1-row2-form{
-
+    margin-left: 50px;
     /*box-shadow: 3px 3px 8px 1px black;*/
 }
 
@@ -174,18 +174,59 @@ a{
 .vis-wrap-login{
     background-color: #ffffff;
     color: #2B82AD;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    padding: 50px;
+    font-size: 15px;
+    width: 250px;
+    border-radius: 10px;
 }
 
 .col1-row1-login{
-    font-family: 'Open-Sans', sans-sans-serif;
     font-weight: 600;
 }
 
-.vis-wrap-login input{
-    
+.vis-wrap-login .row1-inside-login input{
+    margin: 5px 0 15px;
+    padding: 10px;
+    height: 10px;
+    background-color: #777;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    width: 230px;
 }
 
+.row2-inside-login{
+    margin-bottom: 70px;
+}
 
+.col1-row2-login{
+    font-weight: 600;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.col2-row2-login input{
+    float: left;
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 80px;
+    background-color: #EEE;
+    border: 1px solid #2B82AD;
+    font-weight: 700;
+    color: #2B82AD;
+}
+
+.col2-row2-login input:hover{
+    background-color: #2B82AD;
+    color: #EEE;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+}
 /*Form Cadastro*/
 #feedback-form {
   width: 280px;
@@ -269,4 +310,39 @@ a{
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #E91E63;
+    height: 3px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+}
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+}
+
+a.popup-with-zoom-anim {
+    color: #2b82ad;
+    font-weight: 600;
+    float: left;
+    width: 35%;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+a.popup-with-zoom-anim:hover {
+    color: #E91E63;
 }

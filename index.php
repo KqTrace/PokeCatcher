@@ -45,15 +45,16 @@
                                         <div class="vis-wrap-login">
                                             <div class="row1-inside-login">
                                                 <div class="col1-row1-login">
-                                                    <label>Nome de Usuário/Email</label>
-                                                    <input type="text" placeholder="Nome de usuário/Email" name="#"></input>
-                                                    <label>Senha</label>
+                                                    <label>Nome de Usuário/Email</label></br>
+                                                    <input type="text" placeholder="Nome de usuário/Email" name="#"></input></br>
+                                                    <label>Senha</label></br>
                                                     <input type="text" placeholder="Senha" name="#"></input>
                                                 </div>
                                             </div>
                                             <div class="row2-inside-login">
                                                 <div class="col1-row2-login">
-                                                    <h3>Checkbox lembrar a senha</h3>
+                                                    <input type="checkbox"></input>
+                                                    <label>Lembrar a senha</label>
                                                 </div>
                                                 <div class="col2-row2-login">
                                                     <input type="button" value="LOGIN"></input>
@@ -62,7 +63,7 @@
                                             <div class="row3-inside-login">
                                                 <div class="col1-row3-login">
                                                     <h4>Não é um membro?</h4>
-                                                    <a href="#"><p>Registre-se</p></a>
+                                                    <a class="popup-with-zoom-anim hvr-underline-from-left" href="#"><p>Registre-se</p></a>
                                                 </div>
                                             </div>
                                         </div>
